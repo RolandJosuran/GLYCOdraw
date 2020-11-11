@@ -21,7 +21,7 @@ GLYCO.toolbar = function (svg) {
         y: 5
     }
     this.cols = GLYCO.sym[10].length;
-    this.rows = GLYCO.sym.length - 1;
+    this.rows = GLYCO.sym.length;
     this.cellWidth = GLYCO.sacSize + 2 * this.padding.x;
     this.cellHeight = GLYCO.sacSize + GLYCO.fontSize * 1.2 + 2 * this.padding.y;
     this.height = this.rows * this.cellHeight;

@@ -1,3 +1,3 @@
 ﻿$(function () {
-    var canvas = new GLYCO.draw("#glycanContainer", 1000, null, "white");
+    var canvas = new GLYCO.draw("#glycanContainer", null, 800, "white");
 })

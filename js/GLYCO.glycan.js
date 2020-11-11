@@ -24,7 +24,7 @@ GLYCO.glycan = function (canvas, origin) {
     let originX = this.canvas.scales.x(this.canvas.domains.x[1]);
     let originY = this.canvas.scales.y(this.canvas.domains.y[1] / 2);
     this.data = new GLYCO.sac(GLYCO.sacEnum.redEnd.redEnd, null, originX, originY);
-    this.data.children.push(new GLYCO.sac(GLYCO.sacEnum.HexNAc.GlcNAc, this.data));
+    // this.data.children.push(new GLYCO.sac(GLYCO.sacEnum.HexNAc.GlcNAc, this.data));
     this.tree = data => {
         return d3.tree().nodeSize([1, 1])(d3.hierarchy(data));
     };

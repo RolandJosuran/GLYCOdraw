@@ -27,7 +27,7 @@ GLYCO.draw = function (id, height, width, theme = "white") {
     // Set dimensions
     this.margin = 15;
     this.aspectRatio = 1.618;
-    this.toolbarHeight = 510;
+    this.toolbarHeight = 650;
 
     // Height and width
     this.width = width || d3.select(id).node().clientWidth - (2 * this.margin);
@@ -36,7 +36,7 @@ GLYCO.draw = function (id, height, width, theme = "white") {
         this.height = height;
         this.aspectRatio = this.width / this.height;
     } else {
-        this.height = Math.floor(this.width / this.aspectRatio);
+        this.height = Math.floor(this.width / this.aspectRatio) + this.toolbarHeight;
     }
 
     // Components
